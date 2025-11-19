@@ -1,12 +1,7 @@
 <template>
   <header class="w-full bg-slate-950/95 border-b border-slate-800 sticky top-0 z-30 backdrop-blur">
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-      <router-link
-        to="/"
-        class="inline-flex items-center px-3 py-1"
-      >
-        KaijeStore
-      </router-link>
+      <router-link to="/" class="inline-flex items-center px-3 py-1"> KaijeStore </router-link>
 
       <div class="flex items-center gap-1 sm:gap-3 text-sm">
         <router-link
@@ -51,11 +46,11 @@
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
+import { useRoute } from 'vue-router'
 
-const route = useRoute();
+const route = useRoute()
 
 function isActive(path) {
-  return route.path === path;
+  return route.path === path
 }
 </script>

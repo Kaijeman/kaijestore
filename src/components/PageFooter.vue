@@ -2,7 +2,9 @@
   <footer class="bg-slate-950 border-t border-slate-800 mt-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-10">
       <div>
-        <div class="inline-flex items-center px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-sm font-semibold">
+        <div
+          class="inline-flex items-center px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-sm font-semibold"
+        >
           KaijeStore
         </div>
         <p class="mt-4 text-sm text-slate-400 max-w-xs">
@@ -14,20 +16,10 @@
         <h3 class="text-sm font-semibold text-slate-200">Tautan Cepat</h3>
         <ul class="space-y-2 text-sm text-slate-400">
           <li>
-            <button
-              type="button"
-              class="hover:text-white transition-colors"
-            >
-              Tentang Kami
-            </button>
+            <button type="button" class="hover:text-white transition-colors">Tentang Kami</button>
           </li>
           <li>
-            <button
-              type="button"
-              class="hover:text-white transition-colors"
-            >
-              Bantuan
-            </button>
+            <button type="button" class="hover:text-white transition-colors">Bantuan</button>
           </li>
         </ul>
       </div>
@@ -61,9 +53,7 @@
     </div>
 
     <div class="border-t border-slate-800 py-4">
-      <p class="text-center text-xs text-slate-500">
-        © 2025 KaijeStore. All rights reserved.
-      </p>
+      <p class="text-center text-xs text-slate-500">© 2025 KaijeStore. All rights reserved.</p>
     </div>
   </footer>
 </template>
