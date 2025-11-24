@@ -1,65 +1,65 @@
 <template>
-  <div class="bg-slate-900">
-    <section class="bg-linear-to-b from-slate-950 via-slate-950 to-slate-900 pb-4">
+  <div class="bg-slate-50">
+    <section class="pb-6">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2">Hubungi Kami</h1>
-        <p class="text-sm text-slate-300 max-w-xl">
+        <h1 class="text-2xl sm:text-3xl text-slate-900 font-bold mb-2">Hubungi Kami</h1>
+        <p class="text-sm text-slate-500 max-w-xl">
           Punya pertanyaan atau butuh bantuan? Kami siap membantu Anda!
         </p>
-        <div class="h-0.5 bg-slate-700 mt-3"></div>
+        <div class="h-0.5 bg-slate-300 mt-3"></div>
       </div>
     </section>
 
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 space-y-10">
       <div class="-mt-12 grid gap-6 md:grid-cols-4">
-        <div class="bg-slate-950 rounded-2xl border border-slate-800 p-5">
-          <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center mb-3">
+        <div class="bg-white rounded-2xl border border-slate-200 p-5">
+          <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-3">
             <span class="text-xs">
-              <i class="bi bi-envelope-fill text-xl"></i>
+              <i class="bi bi-envelope text-xl text-slate-700"></i>
             </span>
           </div>
-          <p class="text-xs text-slate-400 mb-1">Email</p>
-          <p class="text-sm font-medium">support@kaijestore.com</p>
+          <p class="text-xs text-slate-500 mb-1">Email</p>
+          <p class="text-sm text-slate-800 font-medium">support@kaijestore.com</p>
         </div>
 
-        <div class="bg-slate-950 rounded-2xl border border-slate-800 p-5">
-          <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center mb-3">
+        <div class="bg-white rounded-2xl border border-slate-200 p-5">
+          <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-3">
             <span class="text-xs">
-              <i class="bi bi-telephone-fill text-xl"></i>
+              <i class="bi bi-telephone text-xl text-slate-700"></i>
             </span>
           </div>
-          <p class="text-xs text-slate-400 mb-1">Telepon</p>
-          <p class="text-sm font-medium">+62 813-9402-2660</p>
+          <p class="text-xs text-slate-500 mb-1">Telepon</p>
+          <p class="text-sm text-slate-800 font-medium">+62 813-9402-2660</p>
         </div>
 
-        <div class="bg-slate-950 rounded-2xl border border-slate-800 p-5">
-          <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center mb-3">
+        <div class="bg-white rounded-2xl border border-slate-200 p-5">
+          <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-3">
             <span class="text-xs">
-              <i class="bi bi-geo-alt-fill text-xl"></i>
+              <i class="bi bi-geo-alt text-xl text-slate-700"></i>
             </span>
           </div>
-          <p class="text-xs text-slate-400 mb-1">Alamat</p>
-          <p class="text-sm font-medium">
+          <p class="text-xs text-slate-500 mb-1">Alamat</p>
+          <p class="text-sm text-slate-800 font-medium">
             Jl. Sepinggan Pratama,<br />
             Balikpapan Selatan, Kalimantan Timur 76115
           </p>
         </div>
 
-        <div class="bg-slate-950 rounded-2xl border border-slate-800 p-5">
-          <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center mb-3">
+        <div class="bg-white rounded-2xl border border-slate-200 p-5">
+          <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-3">
             <span class="text-xs">
-              <i class="bi bi-clock-fill text-xl"></i>
+              <i class="bi bi-clock text-xl text-slate-700"></i>
             </span>
           </div>
-          <p class="text-xs text-slate-400 mb-1">Jam Operasional</p>
-          <p class="text-sm font-medium">
+          <p class="text-xs text-slate-500 mb-1">Jam Operasional</p>
+          <p class="text-sm text-slate-800 font-medium">
             Senin - Sabtu,<br />
             09.00 - 21.00 WITA
           </p>
         </div>
       </div>
 
-      <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden">
+      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
         <div class="grid md:grid-cols-2">
           <a>
             <iframe
@@ -71,17 +71,17 @@
           <div
             class="p-6 md:p-8 flex flex-col items-center md:items-start justify-center text-center md:text-left"
           >
-            <h2 class="text-lg font-semibold mb-2">Lokasi Kami</h2>
+            <h2 class="text-lg text-slate-800 font-semibold mb-2">Lokasi Kami</h2>
 
-            <p class="text-xs text-slate-400 mb-4 max-w-md">
+            <p class="text-xs text-slate-500 mb-4 max-w-md">
               Kunjungi toko fisik kami untuk pengalaman berbelanja langsung.
             </p>
 
             <div class="mt-2">
               <div class="text-2xl mb-2">
-                <i class="bi bi-geo-alt-fill text-xl"></i>
+                <i class="bi bi-geo-alt text-xl text-slate-700"></i>
               </div>
-              <p class="text-sm font-medium mb-1">
+              <p class="text-sm text-slate-800 font-medium mb-1">
                 Jl. Sepinggan Pratama,<br />
                 Balikpapan Selatan, Kalimantan Timur 76115
               </p>
@@ -89,7 +89,7 @@
               <a
                 href="https://www.google.com/maps/place/Jl.+Sepinggan+Pratama,+Sepinggan,+Balikpapan"
                 target="_blank"
-                class="inline-block mt-3 px-4 py-2 rounded-lg border border-slate-700 text-xs font-semibold text-slate-100 hover:bg-slate-100 hover:text-slate-900 transition-colors"
+                class="inline-block mt-3 px-4 py-2 rounded-lg border border-slate-200 text-xs font-semibold bg-slate-100 text-slate-900 hover:bg-slate-900 hover:text-slate-100 transition-colors"
               >
                 Buka di Google Maps
               </a>

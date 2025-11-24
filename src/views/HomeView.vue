@@ -32,62 +32,58 @@
       </div>
     </section>
 
-    <section class="bg-slate-900">
+    <section class="bg-slate-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="text-center mb-12">
-          <h2 class="text-lg font-semibold text-slate-100 mb-2">
-            Mengapa Memilih KaijeStore?
-          </h2>
-          <p class="text-sm text-slate-400">
+          <h2 class="text-lg font-semibold text-slate-900 mb-2">Mengapa Memilih KaijeStore?</h2>
+          <p class="text-sm text-slate-500">
             Kami menyediakan berbagai fitur untuk pengalaman berbelanja yang lebih baik
           </p>
         </div>
 
         <div class="grid gap-6 md:grid-cols-4">
-          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
-            <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center mb-4">
+          <div class="bg-white border border-slate-200 rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-4">
               <span class="text-xs">
-                <i class="bi bi-cart-fill text-xl"></i>
+                <i class="bi bi-cart3 text-xl text-slate-700"></i>
               </span>
             </div>
-            <h3 class="font-semibold text-sm mb-2">Beli Langsung</h3>
-            <p class="text-xs text-slate-400">
+            <h3 class="font-semibold text-slate-800 text-sm mb-2">Beli Langsung</h3>
+            <p class="text-xs text-slate-600">
               Dapatkan konsol dan game favorit Anda dengan harga tetap.
             </p>
           </div>
 
-          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
-            <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center mb-4">
+          <div class="bg-white border border-slate-200 rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-4">
               <span class="text-xs">
-                <i class="bi bi-hammer text-xl"></i>
+                <i class="bi bi-hourglass text-xl text-slate-700"></i>
               </span>
             </div>
-            <h3 class="font-semibold text-sm mb-2">Sistem Lelang</h3>
-            <p class="text-xs text-slate-400">
+            <h3 class="font-semibold text-slate-800 text-sm mb-2">Sistem Lelang</h3>
+            <p class="text-xs text-slate-600">
               Ikuti lelang dan dapatkan penawaran terbaik untuk item langka.
             </p>
           </div>
 
-          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
-            <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center mb-4">
+          <div class="bg-white border border-slate-200 rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-4">
               <span class="text-xs">
-                <i class="bi bi-cash text-xl"></i>
+                <i class="bi bi-cash text-xl text-slate-700"></i>
               </span>
             </div>
-            <h3 class="font-semibold text-sm mb-2">Harga Terbaik</h3>
-            <p class="text-xs text-slate-400">
-              Kami menjamin harga kompetitif untuk semua produk.
-            </p>
+            <h3 class="font-semibold text-slate-800 text-sm mb-2">Harga Terbaik</h3>
+            <p class="text-xs text-slate-600">Kami menjamin harga kompetitif untuk semua produk.</p>
           </div>
 
-          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
-            <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center mb-4">
+          <div class="bg-white border border-slate-200 rounded-2xl p-6">
+            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-4">
               <span class="text-xs">
-                <i class="bi bi-controller text-xl"></i>
+                <i class="bi bi-controller text-xl text-slate-700"></i>
               </span>
             </div>
-            <h3 class="font-semibold text-sm mb-2">Koleksi Lengkap</h3>
-            <p class="text-xs text-slate-400">
+            <h3 class="font-semibold text-slate-800 text-sm mb-2">Koleksi Lengkap</h3>
+            <p class="text-xs text-slate-600">
               Dari konsol klasik hingga game terbaru, semua ada di sini.
             </p>
           </div>

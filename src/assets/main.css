@@ -1,7 +1,7 @@
-@import "tailwindcss";
-@import "bootstrap-icons/font/bootstrap-icons";
+@import 'tailwindcss';
+@import 'bootstrap-icons/font/bootstrap-icons';
 
-@theme {
+/* @theme {
   --color-primary: #0f172a;
   --color-secondary: #020617;
   --color-accent: #111827;
@@ -11,4 +11,4 @@
   body {
     @apply bg-slate-950 text-slate-100 font-sans;
   }
-}
+} */

@@ -16,10 +16,14 @@
         <h3 class="text-sm font-semibold text-slate-200">Tautan Cepat</h3>
         <ul class="space-y-2 text-sm text-slate-400">
           <li>
-            <button type="button" class="hover:text-white transition-colors">Tentang Kami</button>
+            <router-link to="/tentang-kami" class="hover:text-white transition-colors">
+              Tentang Kami
+            </router-link>
           </li>
           <li>
-            <button type="button" class="hover:text-white transition-colors">Bantuan</button>
+            <router-link to="/bantuan" class="hover:text-white transition-colors">
+              Bantuan
+            </router-link>
           </li>
         </ul>
       </div>
