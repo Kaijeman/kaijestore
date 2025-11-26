@@ -1,4 +1,3 @@
-// src/stores/cartStore.js
 import { reactive, computed } from 'vue'
 import { products } from '../data/products'
 
@@ -8,9 +7,6 @@ const state = reactive({
   shippingCost: 50_000,
 })
 
-// ====== ACTIONS ======
-
-// Tambah produk Market ke keranjang
 function addMarketProduct(productId) {
   const product = products.find((p) => p.id === productId && p.type === 'Market')
   if (!product) return
@@ -26,7 +22,6 @@ function addMarketProduct(productId) {
   }
 }
 
-// (kalau mau nanti bisa dipakai untuk lelang)
 function addAuctionBid(productId, bidAmount, endText) {
   const product = products.find((p) => p.id === productId && p.type === 'Lelang')
   if (!product) return
@@ -60,8 +55,6 @@ function removeAuctionItem(id) {
   state.auctionItems = state.auctionItems.filter((item) => item.id !== id)
 }
 
-// ====== GETTERS ======
-
 const isEmpty = computed(() => state.marketItems.length === 0 && state.auctionItems.length === 0)
 
 const subtotalMarket = computed(() =>
@@ -74,7 +67,6 @@ const subtotalAuction = computed(() =>
 
 const total = computed(() => subtotalMarket.value + subtotalAuction.value + state.shippingCost)
 
-// Hook yang dipakai di komponen
 export function useCart() {
   return {
     state,
