@@ -14,17 +14,19 @@
 
         <router-link
           to="/katalog"
-          class="px-3 py-1 rounded-md text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+          class="px-3 py-1 rounded-md transition-colors hover:bg-slate-800 hover:text-white"
+          :class="isActive('/katalog') ? 'text-white' : 'text-slate-300'"
         >
           Katalog
         </router-link>
 
-        <button
-          type="button"
-          class="px-3 py-1 rounded-md text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+        <router-link
+          to="/keranjang"
+          class="px-3 py-1 rounded-md transition-colors hover:bg-slate-800 hover:text-white"
+          :class="isActive('/keranjang') ? 'text-white' : 'text-slate-300'"
         >
           Keranjang
-        </button>
+        </router-link>
 
         <router-link
           to="/kontak"

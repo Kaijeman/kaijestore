@@ -95,9 +95,10 @@
               <div class="flex items-center gap-3">
                 <button
                   type="button"
+                  @click="handlePlaceBid"
                   class="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-orange-500 text-white text-sm font-semibold py-3 hover:bg-orange-600 transition-colors"
                 >
-                  <i class="bi bi-hammer"></i>
+                  <i class="bi bi-hourglass"></i>
                   Pasang Bid
                 </button>
 
@@ -114,6 +115,7 @@
               <div class="flex items-center gap-3">
                 <button
                   type="button"
+                  @click="handleAddToCart"
                   class="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 text-white text-sm font-semibold py-3 hover:bg-slate-800 transition-colors"
                 >
                   <i class="bi bi-cart3"></i>
@@ -161,8 +163,11 @@
 import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { products } from '../data/products'
+import { useCart } from '../stores/cart'
 
 const route = useRoute()
+
+const { addMarketProduct, addAuctionBid } = useCart()
 
 const product = computed(() => {
   const id = Number(route.params.id)
@@ -173,5 +178,44 @@ const userBid = ref('')
 
 function formatPrice(value) {
   return value.toLocaleString('id-ID')
+}
+
+function handleAddToCart() {
+  if (!product.value || product.value.type !== 'Market') return
+  addMarketProduct(product.value.id)
+}
+
+function handlePlaceBid() {
+  if (!product.value || product.value.type !== 'Lelang') return
+
+  const raw = (userBid.value ?? '').toString().trim()
+
+  if (raw === '') {
+    console.warn('Input bid kosong — tidak diproses.')
+    return
+  }
+
+  const cleaned = raw.replace(/\D/g, '')
+  if (cleaned === '') {
+    console.warn('Bid tidak valid — hanya angka yang diterima.')
+    return
+  }
+
+  const numeric = Number(cleaned)
+
+  if (!Number.isFinite(numeric) || numeric <= 0) {
+    console.warn('Nominal bid tidak valid.')
+    return
+  }
+
+  const minBid = product.value.currentBid + product.value.bidStep
+  if (numeric < minBid) {
+    console.warn(`Bid terlalu rendah. Minimal: Rp ${minBid.toLocaleString('id-ID')}`)
+    return
+  }
+
+  addAuctionBid(product.value.id, numeric, product.value.endText)
+
+  userBid.value = ''
 }
 </script>

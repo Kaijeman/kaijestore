@@ -5,6 +5,7 @@ import HelpView from '../views/HelpView.vue'
 import AboutView from '../views/AboutView.vue'
 import CatalogView from '../views/CatalogView.vue'
 import ProductDetailView from '../views/ProductDetailView.vue'
+import CartView from '../views/CartView.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: HomeView },
@@ -13,6 +14,7 @@ const routes = [
   { path: '/tentang-kami', name: 'About', component: AboutView },
   { path: '/katalog', name: 'Catalog', component: CatalogView },
   { path: '/katalog/:id', name: 'product-detail', component: ProductDetailView },
+  { path: '/keranjang', name: 'cart', component: CartView },
 ]
 
 const router = createRouter({

@@ -105,7 +105,7 @@
           <div class="pt-2">
             <button
               type="submit"
-              class="w-full md:w-auto px-6 py-2.5 rounded-lg bg-slate-100 text-slate-900 border border-slate-200 text-sm font-semibold hover:bg-slate-900 hover:text-slate-100 transition-colors"
+              class="w-full md:w-auto px-6 py-2.5 rounded-lg bg-slate-100 text-slate-900 border border-slate-900 text-sm font-semibold hover:bg-slate-900 hover:text-slate-100 transition-colors"
             >
               Kirim Pesan
             </button>
@@ -143,7 +143,7 @@
               <a
                 href="https://www.google.com/maps/place/Jl.+Sepinggan+Pratama,+Sepinggan,+Balikpapan"
                 target="_blank"
-                class="inline-block mt-3 px-4 py-2 rounded-lg border border-slate-200 text-xs font-semibold bg-slate-100 text-slate-900 hover:bg-slate-900 hover:text-slate-100 transition-colors"
+                class="inline-block mt-3 px-4 py-2 rounded-lg border border-slate-900 text-xs font-semibold bg-slate-100 text-slate-900 hover:bg-slate-900 hover:text-slate-100 transition-colors"
               >
                 Buka di Google Maps
               </a>

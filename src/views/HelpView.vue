@@ -67,7 +67,7 @@
           <div class="mt-10">
             <router-link
               to="/kontak"
-              class="px-6 py-3 rounded-lg bg-slate-900 text-slate-100 text-sm font-semibold hover:bg-slate-100 hover:text-slate-900 transition-colors"
+              class="px-6 py-3 rounded-lg border hover:border-slate-900 bg-slate-900 text-slate-100 text-sm font-semibold hover:bg-slate-100 hover:text-slate-900 transition-colors"
             >
               Hubungi Kami
             </router-link>
