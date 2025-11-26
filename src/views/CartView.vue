@@ -45,7 +45,15 @@
                 <div v-for="item in marketItems" :key="item.id" class="flex gap-4 px-6 py-4">
                   <div
                     class="h-20 w-20 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-300"
-                  ></div>
+                  >
+                    <img
+                      v-if="item.image"
+                      :src="item.image"
+                      :alt="item.name"
+                      class="w-full h-full object-cover"
+                    />
+                    <i v-else class="bi bi-controller text-2xl text-slate-300"></i>
+                  </div>
 
                   <div class="flex-1 space-y-1">
                     <div class="flex items-start justify-between gap-4">
@@ -76,7 +84,7 @@
                             class="px-3 py-1 text-sm text-slate-700 hover:bg-slate-100"
                             @click="decreaseQty(item)"
                           >
-                            –
+                            -
                           </button>
                           <span class="px-4 text-sm text-slate-900">
                             {{ item.quantity }}
@@ -118,7 +126,15 @@
                 <div v-for="item in auctionItems" :key="item.id" class="flex gap-4 px-6 py-4">
                   <div
                     class="h-20 w-20 rounded-xl bg-white border border-orange-100 flex items-center justify-center text-orange-300"
-                  ></div>
+                  >
+                    <img
+                      v-if="item.image"
+                      :src="item.image"
+                      :alt="item.name"
+                      class="w-full h-full object-cover"
+                    />
+                    <i v-else class="bi bi-controller text-2xl text-orange-300"></i>
+                  </div>
 
                   <div class="flex-1">
                     <div class="flex items-start justify-between gap-4">

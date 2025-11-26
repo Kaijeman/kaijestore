@@ -3,7 +3,16 @@
     class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
     @click="goToDetail"
   >
-    <div class="relative h-32 bg-slate-100">
+    <div class="relative h-32 bg-slate-100 overflow-hidden">
+      <img
+        v-if="product.image"
+        :src="product.image"
+        :alt="product.name"
+        class="w-full h-full object-cover"
+      />
+      <div v-else class="w-full h-full flex items-center justify-center text-slate-300">
+        <i class="bi bi-controller text-3xl"></i>
+      </div>
       <span
         class="absolute top-3 right-3 inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold"
         :class="

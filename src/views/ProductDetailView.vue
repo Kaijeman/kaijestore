@@ -22,8 +22,18 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-2">
         <div>
           <div
-            class="rounded-3xl bg-slate-100 border border-slate-200 h-72 sm:h-80 md:h-[420px]"
-          ></div>
+            class="rounded-3xl bg-slate-100 border border-slate-200 h-72 sm:h-80 md:h-[420px] overflow-hidden"
+          >
+            <img
+              v-if="product.image"
+              :src="product.image"
+              :alt="product.name"
+              class="w-full h-full object-cover"
+            />
+            <div v-else class="w-full h-full flex items-center justify-center text-slate-300">
+              <i class="bi bi-controller text-5xl"></i>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-6">

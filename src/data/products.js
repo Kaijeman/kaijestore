@@ -9,6 +9,7 @@ export const products = [
     condition: 'Baru',
     description:
       'Versi peningkatan dari PS5, menawarkan performa grafis yang lebih tinggi, visual yang lebih tajam, dan pengalaman gaming yang jauh lebih mulus.',
+    image: '/image/playstation-5-pro.webp',
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const products = [
     condition: 'Baru',
     description:
       'Penerus dari Nintendo Switch, menawarkan performa yang lebih bertenaga, grafis yang lebih tajam, dan pengalaman bermain hybrid yang lebih lancar.',
+    image: '/image/nintendo-switch-2.webp',
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ export const products = [
     condition: 'Baru',
     description:
       'Sekuel dari Death Stranding, melanjutkan kisah unik Sam Porter Bridges dalam dunia pasca-apokaliptik yang penuh misteri dan tantangan.',
+    image: '/image/death-stranding-2.webp',
   },
   {
     id: 4,
@@ -45,6 +48,7 @@ export const products = [
     condition: 'Second - Like New',
     description:
       'Edisi terbatas dari Nintendo 3DS, dirilis khusus untuk perayaan 25 tahun Zelda dengan desain hitam-emas yang ikonik dan elegan.',
+    image: '/image/n3ds-zelda-25th-anniversary-edition.webp',
   },
   {
     id: 5,
@@ -59,6 +63,7 @@ export const products = [
     condition: 'Second - Good',
     description:
       'Edisi spesial dari Fire Emblem Fates, menawarkan pengalaman lengkap dengan menyatukan ketiga jalur cerita (Birthright, Conquest, dan Revelation) dalam satu cartridge eksklusif.',
+    image: '/image/fire-emblem-fates-special-edition.webp',
   },
   {
     id: 6,
@@ -73,5 +78,6 @@ export const products = [
     condition: 'Second - Good',
     description:
       'Edisi definitif dari Pokémon Ruby dan Sapphire, menawarkan cerita gabungan dengan Rayquaza sebagai fokus utama dan fitur Battle Frontier yang jauh lebih luas.',
+    image: '/image/pokemon-emerald.webp',
   },
 ]
