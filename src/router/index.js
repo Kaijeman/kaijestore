@@ -3,12 +3,16 @@ import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
 import HelpView from '../views/HelpView.vue'
 import AboutView from '../views/AboutView.vue'
+import CatalogView from '../views/CatalogView.vue'
+import ProductDetailView from '../views/ProductDetailView.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: HomeView },
   { path: '/kontak', name: 'Contact', component: ContactView },
   { path: '/bantuan', name: 'Help', component: HelpView },
   { path: '/tentang-kami', name: 'About', component: AboutView },
+  { path: '/katalog', name: 'Catalog', component: CatalogView },
+  { path: '/katalog/:id', name: 'product-detail', component: ProductDetailView },
 ]
 
 const router = createRouter({

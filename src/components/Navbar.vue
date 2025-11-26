@@ -12,12 +12,12 @@
           Beranda
         </router-link>
 
-        <button
-          type="button"
+        <router-link
+          to="/katalog"
           class="px-3 py-1 rounded-md text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
         >
           Katalog
-        </button>
+        </router-link>
 
         <button
           type="button"

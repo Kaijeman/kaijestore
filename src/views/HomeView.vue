@@ -3,7 +3,7 @@
     <section class="relative overflow-hidden">
       <div class="absolute inset-0 bg-[url('/image/Konsol.webp')] bg-cover bg-center"></div>
       <div class="absolute inset-0 bg-black/60"></div>
-      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-26 pb-65">
         <div class="max-w-3xl">
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             Temukan Konsol & Game yang Anda inginkan di KaijeStore
@@ -14,12 +14,12 @@
           </p>
 
           <div class="mt-8 flex flex-wrap gap-4">
-            <button
-              type="button"
+            <router-link
+              to="/katalog"
               class="px-6 py-3 rounded-lg bg-slate-100 text-slate-900 text-sm font-semibold hover:bg-slate-900 hover:text-slate-200 transition-colors"
             >
               Jelajahi Katalog
-            </button>
+            </router-link>
 
             <router-link
               to="/kontak"
@@ -33,7 +33,7 @@
     </section>
 
     <section class="bg-slate-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="text-center mb-12">
           <h2 class="text-lg font-semibold text-slate-900 mb-2">Mengapa Memilih KaijeStore?</h2>
           <p class="text-sm text-slate-500">

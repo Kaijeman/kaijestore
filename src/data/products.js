@@ -1,0 +1,77 @@
+export const products = [
+  {
+    id: 1,
+    type: 'Market',
+    name: 'PlayStation 5',
+    category: 'Konsol',
+    price: 7999000,
+    stockText: 'Stok: 15 unit tersedia',
+    condition: 'Baru',
+    description:
+      'PlayStation 5 adalah konsol game generasi terbaru dari Sony yang menawarkan pengalaman gaming ultra-cepat dengan SSD khusus, grafis yang memukau, dan dukungan hingga 4K 120fps. Dilengkapi dengan kontroler DualSense yang inovatif dengan teknologi haptic feedback dan adaptive triggers.',
+  },
+  {
+    id: 2,
+    type: 'Market',
+    name: 'Xbox Series X',
+    category: 'Konsol',
+    price: 7499000,
+    stockText: 'Stok: 12 unit tersedia',
+    condition: 'Baru',
+    description:
+      'Xbox Series X adalah konsol generasi terbaru dari Microsoft dengan performa tinggi, dukungan resolusi hingga 4K, dan waktu loading yang sangat cepat.',
+  },
+  {
+    id: 3,
+    type: 'Market',
+    name: 'The Last of Us Part II',
+    category: 'Game',
+    price: 699000,
+    stockText: 'Stok: 30 unit tersedia',
+    condition: 'Baru',
+    description:
+      'The Last of Us Part II adalah game action-adventure eksklusif PlayStation dengan kisah emosional dan grafis realistis.',
+  },
+  {
+    id: 4,
+    type: 'Lelang',
+    name: 'Nintendo Switch OLED',
+    category: 'Konsol',
+    price: 4200000,
+    currentBid: 4200000,
+    suggestedBid: 4250000,
+    bidStep: 50000,
+    endText: 'Berakhir: 2 hari lagi',
+    condition: 'Second - Like New',
+    description:
+      'Nintendo Switch OLED Model hadir dengan layar OLED 7-inch yang lebih cerah dan warna lebih vibrant. Bisa dimainkan di TV atau portable.',
+  },
+  {
+    id: 5,
+    type: 'Lelang',
+    name: 'God of War Ragnarök',
+    category: 'Game',
+    price: 650000,
+    currentBid: 650000,
+    suggestedBid: 700000,
+    bidStep: 50000,
+    endText: 'Berakhir: 1 hari lagi',
+    condition: 'Second - Good',
+    description:
+      'God of War Ragnarök melanjutkan kisah Kratos dan Atreus dalam petualangan epik di mitologi Nordik.',
+  },
+  {
+    id: 6,
+    type: 'Lelang',
+    name: 'Zelda: Breath of the Wild',
+    category: 'Game',
+    price: 450000,
+    currentBid: 450000,
+    suggestedBid: 500000,
+    bidStep: 50000,
+    endText: 'Berakhir: 3 hari lagi',
+    condition: 'Second - Good',
+    description:
+      'The Legend of Zelda: Breath of the Wild adalah game open-world dengan dunia luas dan kebebasan eksplorasi tinggi.',
+  },
+]

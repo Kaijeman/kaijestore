@@ -1,16 +1,15 @@
 <template>
   <div class="bg-slate-50">
-    <section class="pb-6">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section class="py-8 border-b border-slate-200 bg-white/60 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-2xl sm:text-3xl text-slate-900 font-bold mb-2">Hubungi Kami</h1>
         <p class="text-sm text-slate-500 max-w-xl">
           Punya pertanyaan atau butuh bantuan? Kami siap membantu Anda!
         </p>
-        <div class="h-0.5 bg-slate-300 mt-3"></div>
       </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 space-y-10">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 space-y-10">
       <div class="-mt-12 grid gap-6 md:grid-cols-4">
         <div class="bg-white rounded-2xl border border-slate-200 p-5">
           <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center mb-3">
@@ -59,6 +58,61 @@
         </div>
       </div>
 
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8">
+        <h2 class="text-lg text-slate-800 font-semibold mb-1">Kirim Pesan</h2>
+        <p class="text-xs text-slate-500 mb-6">
+          Isi form di bawah ini dan kami akan segera menghubungi Anda.
+        </p>
+
+        <form class="space-y-4" @submit.prevent="handleSubmit">
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs text-slate-400 mb-1">Nama Lengkap</label>
+              <input
+                type="text"
+                class="w-full rounded-lg border border-slate-200 bg-slate-100 px-3 py-2 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500"
+                placeholder="Masukkan nama Anda"
+              />
+            </div>
+            <div>
+              <label class="block text-xs text-slate-400 mb-1">Email</label>
+              <input
+                type="email"
+                class="w-full rounded-lg border border-slate-200 bg-slate-100 px-3 py-2 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500"
+                placeholder="email@example.com"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Subjek</label>
+            <input
+              type="text"
+              class="w-full rounded-lg border border-slate-200 bg-slate-100 px-3 py-2 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500"
+              placeholder="Topik pesan Anda"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">Pesan</label>
+            <textarea
+              rows="5"
+              class="w-full rounded-lg border border-slate-200 bg-slate-100 px-3 py-2 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500 resize-none"
+              placeholder="Tulis pesan Anda di sini..."
+            ></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button
+              type="submit"
+              class="w-full md:w-auto px-6 py-2.5 rounded-lg bg-slate-100 text-slate-900 border border-slate-200 text-sm font-semibold hover:bg-slate-900 hover:text-slate-100 transition-colors"
+            >
+              Kirim Pesan
+            </button>
+          </div>
+        </form>
+      </div>
+
       <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
         <div class="grid md:grid-cols-2">
           <a>
@@ -100,3 +154,9 @@
     </section>
   </div>
 </template>
+
+<script setup>
+function handleSubmit() {
+  alert('Pesan terkirim.')
+}
+</script>
