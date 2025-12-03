@@ -39,7 +39,12 @@
         Bid saat ini
       </p>
 
-      <p class="text-sm font-semibold text-slate-900">Rp {{ formatPrice(product.price) }}</p>
+      <p
+        class="text-sm font-semibold"
+        :class="product.type === 'Lelang' ? 'text-orange-600' : 'text-slate-900'"
+      >
+        Rp {{ formatPrice(product.price) }}
+      </p>
 
       <p class="text-[11px] text-slate-500">
         {{ product.extra }}

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-50">
+  <div class="bg-slate-50 min-h-screen">
     <section class="py-16">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-slate-900 text-3xl sm:text-4xl font-bold mb-4">Pusat Bantuan</h1>

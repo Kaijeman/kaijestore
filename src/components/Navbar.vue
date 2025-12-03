@@ -36,12 +36,13 @@
           Kontak
         </router-link>
 
-        <button
+        <router-link
+          to="/profil"
           type="button"
           class="px-3 py-1 rounded-md text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
         >
           Profil
-        </button>
+        </router-link>
       </div>
     </nav>
   </header>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-50">
+  <div class="bg-slate-50 min-h-screen">
     <section class="py-8 border-b border-slate-200 bg-white/60 backdrop-blur">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-slate-900 text-2xl sm:text-3xl font-bold mb-4">Katalog Produk</h1>

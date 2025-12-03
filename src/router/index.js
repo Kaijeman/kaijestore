@@ -6,6 +6,7 @@ import AboutView from '../views/AboutView.vue'
 import CatalogView from '../views/CatalogView.vue'
 import ProductDetailView from '../views/ProductDetailView.vue'
 import CartView from '../views/CartView.vue'
+import ProfileView from '../views/ProfileView.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: HomeView },
@@ -15,6 +16,7 @@ const routes = [
   { path: '/katalog', name: 'Catalog', component: CatalogView },
   { path: '/katalog/:id', name: 'product-detail', component: ProductDetailView },
   { path: '/keranjang', name: 'cart', component: CartView },
+  { path: '/profil', name: 'profil', component: ProfileView },
 ]
 
 const router = createRouter({

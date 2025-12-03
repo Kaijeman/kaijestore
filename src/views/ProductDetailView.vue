@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-slate-50">
-    <section class>
+  <div class="bg-slate-50 min-h-screen">
+    <section>
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         <router-link
           to="/katalog"
@@ -115,8 +115,12 @@
                 <button
                   type="button"
                   class="w-11 h-11 rounded-xl border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors"
+                  @click.stop="handleToggleWishlist"
                 >
-                  <i class="bi bi-heart"></i>
+                  <i
+                    class="bi"
+                    :class="inWishlist ? 'bi-heart-fill text-rose-500' : 'bi-heart'"
+                  ></i>
                 </button>
               </div>
             </template>
@@ -135,8 +139,12 @@
                 <button
                   type="button"
                   class="w-11 h-11 rounded-xl border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors"
+                  @click.stop="handleToggleWishlist"
                 >
-                  <i class="bi bi-heart"></i>
+                  <i
+                    class="bi"
+                    :class="inWishlist ? 'bi-heart-fill text-rose-500' : 'bi-heart'"
+                  ></i>
                 </button>
               </div>
             </template>
@@ -174,6 +182,7 @@ import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { products } from '../data/products'
 import { useCart } from '../stores/cart'
+import { useWishlist } from '../stores/wishlist'
 
 const route = useRoute()
 
@@ -227,5 +236,17 @@ function handlePlaceBid() {
   addAuctionBid(product.value.id, numeric, product.value.endText)
 
   userBid.value = ''
+}
+
+const addWishlist = useWishlist()
+
+const inWishlist = computed(() => {
+  if (!product.value) return false
+  return addWishlist.isInWishlist(product.value.id)
+})
+
+function handleToggleWishlist() {
+  if (!product.value) return
+  addWishlist.toggleWishlist(product.value.id)
 }
 </script>
